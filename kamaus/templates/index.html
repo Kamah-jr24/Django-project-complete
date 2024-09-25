@@ -1,0 +1,34 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shoe Selling Website</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body class="main" style="background-color: blueviolet;">
+    <div class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'inquiries' %}">Inquiries</a>
+        <a href="{% url 'signup' %}">Sign In</a>
+        <a href="{% url 'login' %}">Log In</a>
+    </div>
+    <!-- <img src="{% static 'websiteimages/bg2.jpg' %}" alt="">  -->
+    <div class="chat-button">
+        <button onclick="openChat()">Chat with Us</button>
+    </div>
+    
+    <div id="chat-popup" class="chat-popup">
+        <div class="popup-container">
+            <h3>Chat with Us</h3>
+            <textarea id="chat-box" rows="10" readonly></textarea>
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="closeChat()">Close</button>
+        </div>
+    </div>
+    
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

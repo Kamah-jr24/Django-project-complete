@@ -1,0 +1,20 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Welcome Back!</h2>
+        <form method="POST" action="{% url 'signup' %}">
+            {% csrf_token %} 
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Forgot your password? <a href="{% url 'signup' %}">Reset Password</a></p>
+    </div>
+</body>
+</html>

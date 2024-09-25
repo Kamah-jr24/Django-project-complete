@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sneaker Store</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #5c5858; margin: 0; padding: 0;">
+    <div style="text-align: center; padding: 20px;">
+        <h1>Welcome to Sneaker Store</h1>
+        <p>Explore our collection of stylish and comfortable sneakers.
+            Welcome to our sneaker store, where passion meets fashion! We are dedicated to providing the latest trends and classic styles in the world of sneakers.
+            Founded by Dennis, a true sneaker enthusiast, our store is a reflection of our love for quality footwear and exceptional customer service.
+            At our store, you'll find a carefully curated collection of sneakers that cater to every style and preference. Whether you're a casual sneaker wearer or a collector looking for rare finds, we have something for everyone.</p>
+</p>
+        <img src=" {% static 'websiteimages/s3.jpg' %}" alt="Sneaker Image" style="width: 300px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+        <img src="{% static 'websiteimages/s2.jpg' %}" alt="Sneaker Image" style="width: 300px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-top: 20px;"><br>
+        {% comment %} <img src="{% static 'websteimages/j3.jpg' %}" alt="Sneaker Image" style="width: 300px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-top: 20px;"> {% endcomment %}
+        <button style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 20px;" onclick="alert('Check out our latest collection!')">Shop Now</button>
+    </div>
+    <div class="product-container">
+        <div class="card">
+            <div class="shoe-img product1"></div>
+            <h4>Jordan 1.</h4>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <div class="shoe-img product2"></div>
+            <h4>Air Max.</h4>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <div class="shoe-img product3"></div>
+            <h4>Air Jordan 3.</h4>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <div class="shoe-img product4"></div>
+            <h4>Jordan 4.</h4>
+            <button class="btn">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
